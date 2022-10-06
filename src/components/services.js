@@ -1,52 +1,32 @@
-// import { Link } from "react-router-dom";
-// import "../components/css/services.css"
+import { Link } from "react-router-dom";
+import "../components/css/services.css"
 
-// function Services(){
-//     return(
-//         <div className="MainDiv">
-//             <div className="headbox">
-//                 <div className="text"><h2>KNOW MORE ABOUT US</h2></div>
-//                 <span className="link4"><Link style={{ color: 'white' }} to="/homepage">Home</Link></span>
-//                 <span className="link5"><Link style={{ color: 'white' }} to="/bookings">Book</Link></span>
-//                 <span className="link6"><Link style={{ color: 'white' }} to="/explore">Explore</Link></span>
-//             </div>
-//             <div className="centerContents">
-//                 <h3 className="centerHeading">A classic beauty fused with modern finishes</h3>
-//             </div>
-//             <div>
-//                 <p className="paragraph">Bask in the propertys prime locations<br></br>
-//                                               and renowned amenities,<br></br>
-//                                          from the grand courtyard to<br></br>
-//                                         its popular sea-facing terraces and restaurants.</p>
-//             </div>
-//             <div>
-//                 <h3 className="bottomHeading">SERVICES AND FACILITIES</h3>
-//                 <img className="logo1" src="images/wifi.png"/>
-//                 <img className="logo2" src="images/swimming.png"/>
-//                 <img className="logo3" src="images/food.png"/>
-//                 <img className="logo4" src="images/dinning.png"/>
-//                 <img className="logo5" src="images/parking.png"/>
-//                 <img className="logo6" src="images/laundry.png"/>
-//                 <img className="logo7" src="images/bedding.png"/>
-//                 <img className="logo8" src="images/wheelchair.png"/>
-//                 <p className="p1">Available throughout the hotel</p>
-//                 <p className="p2">Pool, deck and loungers for<br></br>
-//                     guest use and relaxation.</p>
-//                 <p className="p3">Bougainvillia-adorned courtyard<br></br>
-//                     with dining</p>
-//                 <p className="p4">Available from 6:30 - 23:00</p>
-//                 <p className="p5">Limited off-street parking<br></br>
-//                     for guests</p>
-//                 <p className="p6">Laundry and dry-cleaning at<br></br>
-//                     an additional cost</p>
-//                 <p className="p7">Offered twice daily</p>
-//                 <p className="p8">For persons with limited<br></br>
-//                     mobility.</p>
-//             </div>
+function Services(){
+    return(
+        <div className="myMainContent">
+            <div className="headbox">
+                <div><h1 style={{textAlign:"center",marginTop:"50px"}}>KNOW MORE ABOUT US</h1></div>
+                <Link to="/newHomePage" style={{ textDecoration: 'none', backgroundColor: 'black', borderRadius: '5px', color: " gray",textAlign:"center",marginLeft:"40%",marginTop:'100px'}}>#Home</Link>
+                <Link to="/services" style={{ textDecoration: 'none', backgroundColor: 'black', borderRadius: '5px', color: " gray",textAlign:"center",marginLeft:"10%",marginTop:'100px'}}>#Services</Link>
+            </div>
+            <div className="centerContents">
+                <h3>A classic beauty fused with modern finishes</h3>
+                <p style={{textAlign:"center"}}>Bask in the propertys prime locations<br></br>
+                                              and renowned amenities,<br></br>
+                                         from the grand courtyard to<br></br>
+                                        its popular sea-facing terraces and restaurants.</p>
+                <h3 className="bottomHeading">SERVICES AND FACILITIES</h3>
+                <img style={{width:"110px",height:'110px',borderRadius:"50%",marginLeft:"-80%"}} src='/images/wifi.png'/>
+                <p style={{fontSize:"20px",marginLeft:"-52%",marginTop:"-6%"}}>Available throughout the hotel</p>
+                <img style={{width:"110px",height:'110px',borderRadius:"50%",marginLeft:"-20%",marginTop:'3%'}} src='/images/swimming.png'/>
+                <p style={{fontSize:"20px",marginLeft:"6%",marginTop:"-8%"}}>Pool, deck and loungers for<br></br>guest use and relaxation.</p>
+                <img style={{width:"110px",height:'110px',borderRadius:"50%",marginLeft:"40%",marginTop:'4%'}} src='/images/dinning.png'/>
+                <p style={{fontSize:"20px",marginLeft:"66%",marginTop:"-6%"}}>Available from 6:30 - 23:00</p>
+            </div>
 
-//         </div>
-//     )
-// }
+        </div>
+    )
+}
 
 
-// export default Services;
+export default Services;
